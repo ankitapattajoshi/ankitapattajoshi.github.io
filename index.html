@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ankita Pattajoshi — UI/UX & Product Designer, Bengaluru</title>
+<meta name="description" content="Ankita Pattajoshi is a Bengaluru-based UI/UX, product and graphic designer. Case studies, experience and contact.">
+<meta property="og:title" content="Ankita Pattajoshi — UI/UX & Product Designer">
+<meta property="og:image" content="headshot.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%239882AC'/><text x='50' y='68' font-size='56' text-anchor='middle' font-family='sans-serif' font-weight='700' fill='%23040404'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#040404;--ink2:#17111D;--cream:#F3EEF7;--paper:#FAF7FC;--text:#1E1726;--mute:#6A5F76;--gold:#9882AC;--lav:#D8CCE3;--blush:#E3C4D1;--deep:#5E4A73;--plum:#2B2034;
+--d:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;--b:'Figtree','Helvetica Neue',Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 17px/1.65 var(--b);background:var(--cream);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--d);line-height:1.02;letter-spacing:-.02em}
+nav{position:fixed;inset:0 0 auto;z-index:10;background:var(--ink);color:var(--cream)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav .logo{display:block;line-height:0}nav .logo img{height:46px;width:auto}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav a{text-decoration:none;font-size:15px;font-weight:500}
+nav ul a:hover{color:var(--blush)}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;font-weight:600;text-decoration:none;background:var(--gold);color:var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:none;border:1.5px solid currentColor;color:inherit}
+/* hero */
+.hero{background:var(--ink);color:var(--cream);min-height:100vh;display:flex;align-items:flex-end;position:relative;overflow:hidden;padding-top:64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;align-items:end;gap:0;width:100%}
+.hero-t{padding-bottom:72px;position:relative;z-index:2}
+.hero h1{font-size:clamp(56px,10vw,138px);font-weight:800;line-height:.88;margin-bottom:28px;animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span{display:block}
+.hero h1 span+span{color:var(--gold);background:linear-gradient(90deg,var(--gold),var(--blush));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-left:.5em}
+.hero p{max-width:30em;font-size:19px;color:#D3CADD;margin-bottom:30px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero img{width:100%;display:block;-webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent),linear-gradient(to right,transparent,#000 22%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,#000 78%,transparent),linear-gradient(to right,transparent,#000 22%);mask-composite:intersect}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+/* sections */
+section{padding:104px 0}
+h2{font-size:clamp(34px,5vw,60px);margin-bottom:40px;max-width:15em}
+.lead{font-size:21px;max-width:34em}
+.dark{background:var(--ink2);color:var(--cream)}
+/* work */
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;margin-bottom:72px;text-decoration:none}
+.proj:nth-child(even){grid-template-columns:1fr 1.1fr}.proj:nth-child(even) .shot{order:2}
+.shot{aspect-ratio:4/3;border-radius:28px;background:var(--ink);position:relative;overflow:hidden;display:grid;place-items:center}
+.phone{width:30%;aspect-ratio:9/18;border-radius:22px;background:var(--cream);position:absolute;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.phone.a{left:22%;top:14%;transform:rotate(-6deg);background:var(--gold)}
+.phone.b{right:22%;top:20%;transform:rotate(5deg)}
+.phone i{position:absolute;inset:12% 12% auto;height:10px;border-radius:9px;background:rgba(0,0,0,.18);box-shadow:0 22px 0 rgba(0,0,0,.12),0 44px 0 rgba(0,0,0,.12)}
+.shot.g2{background:#261B2F}.shot.g3{background:var(--gold)}
+.shot.g3 .phone.a{background:var(--ink)}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.gal figure{background:var(--paper);border-radius:22px;overflow:hidden;border:1px solid #D9CEE3}
+.gal img{width:100%;display:block}
+.gal .tall img{height:560px;object-fit:cover;object-position:top}
+.gal figcaption{padding:12px 18px 16px;font-weight:600}
+.banner{width:100%;border-radius:28px;display:block}
+.tag{display:inline-block;font-size:14px;font-weight:600;color:var(--deep);border:1.5px solid var(--deep);border-radius:99px;padding:2px 12px;margin:0 6px 14px 0}
+.proj h3{font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.proj p{color:var(--mute);max-width:28em;margin-bottom:16px}
+.proj .go{font-weight:600;border-bottom:2px solid var(--gold)}
+.proj:hover .shot{transform:scale(1.015)}.shot{transition:transform .3s}
+/* experience */
+.row{display:grid;grid-template-columns:180px 1fr;gap:32px;padding:30px 0;border-top:1px solid #4B3F58}
+.row time{color:var(--gold);font-weight:600}
+.row h3{font-size:26px;margin-bottom:4px}
+.row .org{color:#B8AEC6;margin-bottom:10px}
+.row p{max-width:40em;color:#DDD4E6}
+.row ul{max-width:44em;padding-left:1.2em;color:#DDD4E6}.row li{margin-bottom:9px}.row li::marker{color:var(--gold)}.row strong{color:var(--cream);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}.cards.c2{grid-template-columns:repeat(2,1fr)}.cards.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--paper);border:1px solid #D9CEE3;border-radius:22px;padding:22px}.dark .card{background:#211A29;border-color:#3A2F45}
+.dark .card small{color:var(--blush)}.card h3{font-size:20px;margin-bottom:6px}.card small{display:block;color:var(--deep);font-weight:600;margin-bottom:10px}.card p,.card li{font-size:15.5px;color:var(--mute);margin:0 0 8px}.dark .card p,.dark .card li{color:#CBC1D6}.card ul{padding-left:1.1em;margin:0 0 10px}.card q{display:block;font-size:15.5px;font-style:italic;margin-bottom:12px}
+.st{display:flex;gap:36px;flex-wrap:wrap;margin:22px 0}.st b{font:800 44px var(--d);display:block;line-height:1}.st span{font-size:14px;color:var(--mute)}.dark .st span{color:#B8AEC6}
+.quote{border-left:4px solid var(--gold);padding:4px 0 4px 20px;font:600 22px/1.35 var(--d);max-width:30em;margin:24px 0}.quote small{display:block;font:400 14px var(--b);color:var(--mute);margin-top:6px}
+.sw{display:flex;gap:14px;flex-wrap:wrap;margin:20px 0}.sw div{width:160px;border-radius:16px;padding:16px;color:#111;font-weight:700;font-size:15px}.sw small{display:block;font-weight:500;font-size:13px}
+.mini{max-width:520px;margin:20px auto 0}
+@media(max-width:820px){.cards,.cards.c2,.cards.c4{grid-template-columns:1fr}}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.stats{display:flex;gap:40px;margin-top:32px}
+.stats b{font:800 54px var(--d);display:block;line-height:1}
+.stats span{color:var(--mute);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:32px 40px}
+.skills h3{font-size:21px;margin-bottom:8px}
+.skills p{color:var(--mute);font-size:16px}
+.edu{margin-top:48px;padding-top:28px;border-top:1px solid #CFC3DB}
+.edu p{margin-bottom:6px}
+/* contact */
+#contact{background:var(--gold);padding:112px 0}
+#contact h2{font-size:clamp(40px,8vw,104px);max-width:none;margin-bottom:32px}
+.mail{font:700 clamp(22px,4vw,44px) var(--d);text-decoration:none;border-bottom:4px solid var(--ink)}
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:40px}
+.links .btn{background:var(--ink);color:var(--cream)}
+.links .btn.ghost{background:none;color:var(--ink)}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.flogo{height:96px;width:auto}
+footer{background:var(--ink);color:#9F95AD;padding:28px 0;font-size:14px}
+/* case study */
+#toy,#pitch,#moodsync{display:none}
+.case-hero{background:var(--ink);color:var(--cream);padding:150px 0 80px}
+.case-hero h1{font-size:clamp(46px,8vw,104px);font-weight:800;margin:14px 0 24px}
+.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;padding-top:24px;border-top:1px solid #3A2F45}
+.meta small{color:var(--gold);font-weight:600;display:block}
+.cs{padding:72px 0}
+.cs .wrap{display:grid;grid-template-columns:240px 1fr;gap:48px}
+.cs h2{font-size:32px;margin:0}
+.cs p{max-width:38em;margin-bottom:16px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ba .shot{aspect-ratio:3/4}
+.ba figcaption{margin-top:10px;font-weight:600}
+.big{display:flex;gap:56px;flex-wrap:wrap}
+.big b{font:800 96px var(--d);line-height:1}
+.back{color:var(--gold);text-decoration:none;font-weight:600}
+@media(max-width:820px){
+nav ul{display:none}
+.hero .wrap{grid-template-columns:1fr}.hero-t{padding-bottom:32px;order:2}.hero img{max-width:420px;margin:0 auto}
+.proj,.proj:nth-child(even),.about,.cs .wrap{grid-template-columns:1fr;gap:28px}.proj:nth-child(even) .shot{order:0}
+.gal{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:6px}.meta{grid-template-columns:1fr 1fr}.skills{grid-template-columns:1fr}
+section{padding:72px 0}.big b{font-size:72px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#/" aria-label="Ankita Pattajoshi, home"><img src="logo.png" alt="Ankita Pattajoshi UI UX Designer logo"></a>
+<ul>
+<li><a href="#work">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#about">About</a></li>
+<li><a href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener">Behance</a></li>
+<li><a href="https://www.linkedin.com/in/ankita-pattajoshi/" target="_blank" rel="noopener">LinkedIn</a></li>
+</ul>
+<a class="btn" href="#contact" style="padding:9px 20px">Hire me</a>
+</div></nav>
+
+<main id="home">
+<header class="hero"><div class="wrap">
+<div class="hero-t">
+<h1><span>Ankita</span><span>Pattajoshi</span></h1>
+<p>I'm a UI/UX and product designer in Bengaluru. I design clear, accessible app and web experiences, and the graphics and content around them.</p>
+<div class="cta"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener">Open Behance</a></div>
+</div>
+<img src="headshot.png" alt="Portrait of Ankita Pattajoshi in a cream blazer" fetchpriority="high">
+</div></header>
+
+<section id="work"><div class="wrap">
+<h2>Selected work</h2>
+<!-- Replace each .shot with <img src="your-image.png" alt="..."> when you have project screens -->
+<a class="proj" href="#/toy-house">
+<div class="shot"><img src="images/toy-house-poster.png" alt="Toy House app shown on a phone with children playing" loading="lazy"></div>
+<div><span class="tag">Product design</span><span class="tag">UX/UI</span>
+<h3>Rental Toy House</h3>
+<p>Parents often struggle with buying new toys for their children, as kids can quickly lose interest in toys they already have. This can lead to unnecessary spending, unused toys, and clutter at home.</p>
+<span class="go">Read the case study</span></div>
+</a>
+<a class="proj" href="#/moodsync">
+<div class="shot"><img src="images/moodsync-hero.png" alt="MoodSync app scanning a face to detect mood" loading="lazy"></div>
+<div><span class="tag">UX/UI</span><span class="tag">AI product</span>
+<h3>MoodSync, emotion-based music</h3>
+<p>A mobile concept that reads your mood and builds the playlist, so you never scroll a menu to decide what to hear.</p>
+<span class="go">Read the case study</span></div>
+</a>
+<a class="proj" href="#/pitch-deck">
+<div class="shot"><img src="images/pitch-deck-slide1.png" alt="Opening slide of the Qubit pitch deck" loading="lazy"></div>
+<div><span class="tag">Graphic design</span><span class="tag">Presentation</span>
+<h3>Pitch deck design</h3>
+<p>Slides that explain a complex idea clearly, with a consistent layout, diagrams and visual hierarchy.</p>
+<span class="go">See the slides</span></div>
+</a>
+<a class="btn" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener" style="background:var(--ink);color:var(--cream)">All projects on Behance</a>
+</div></section>
+
+<section id="experience" class="dark"><div class="wrap">
+<h2>Experience</h2>
+<div class="row"><time>2026</time><div><h3>Freelance Graphic Designer</h3><div class="org">Pitch Deck Design Project</div><ul><li>Conceptualised and designed a complete investor pitch deck from concept to final delivery, translating complex business narratives into a cohesive and engaging visual story.</li><li>Developed four detailed <strong>3D isometric illustrations</strong> to visualise key product and process concepts, maintaining consistency in composition, depth, colour, and visual language throughout the deck.</li><li>Designed a large-scale, highly detailed <strong>3D isometric hero illustration</strong> as the deck’s centerpiece, combining complex visual elements into a clear and compelling system overview.</li><li>Applied advanced composition, visual hierarchy, and rendering techniques to create presentation-ready graphics aligned with the client’s creative direction and brand requirements.</li></ul></div></div>
+<div class="row"><time>2024 – Present</time><div><h3>Freelance Graphic Designer</h3><div class="org">Brand &amp; Print Design</div><ul><li>Designed posters, flyers, brochures, business cards, and promotional materials tailored to individual client requirements and brand guidelines.</li><li>Created logos and complete visual identities for individuals, startups, and small businesses, establishing cohesive and recognisable brand systems.</li><li>Developed social media creatives and campaign assets designed to improve brand visibility, communication, and audience engagement.</li><li>Managed social media content creation and scheduling, maintaining consistent visual quality and brand communication across platforms.</li><li>Adapted creative concepts across multiple formats and deliverables while ensuring consistency in typography, colour, layout, and overall brand identity.</li></ul></div></div>
+<div class="row"><time>Mar 2026 – Present</time><div><h3>Graphic Designer</h3><div class="org">Plutowebs</div><ul><li>Conducted content and competitor research to identify relevant trends, audience interests, and market opportunities, supporting social media and content strategy.</li><li>Designed social media graphics, banners, promotional creatives, and marketing collateral using <strong>Figma, Adobe Photoshop, and Adobe Illustrator</strong>.</li><li>Created short-form visual content including <strong>reels, stories, and carousel posts</strong> to support audience engagement and brand growth.</li><li>Managed and scheduled content across <strong>Instagram, LinkedIn, and Facebook</strong>, maintaining a consistent publishing cadence and visual brand language.</li><li>Collaborated with the marketing team to develop and execute content calendars, ensuring creative assets were delivered on schedule and aligned with campaign objectives.</li><li>Reviewed social media performance and engagement metrics to identify content trends and inform future creative and optimisation strategies.</li></ul></div></div>
+<div class="row"><time>2024 – 2025</time><div><h3>Product Designer (UX/UI)</h3><div class="org">Toy House Mobile App | UX Case Study</div><ul><li>Led a cross-functional team of three in redesigning the mobile product experience, collaborating across design and development to deliver a responsive experience for <strong>iOS and Android</strong>.</li><li>Redesigned checkout and product decision flows, contributing to a <strong>30% increase in conversion rate</strong> within the first month following launch.</li><li>Improved application performance by reducing page load time by <strong>40%</strong> through image optimisation and code-splitting techniques.</li><li>Built a scalable design system covering typography, spacing, colour, and reusable UI components, improving interface consistency and reducing design iteration effort.</li><li>Applied accessibility and usability principles across key user flows to improve navigation clarity and overall user experience.</li></ul></div></div>
+<div class="row"><time>2022 – 2023</time><div><h3>UX/UI Designer</h3><div class="org">Mobile App Design</div><ul><li>Designed mobile interfaces for <strong>iOS and Android</strong>, following platform-specific UI guidelines and established usability principles.</li><li>Developed cohesive visual systems using typography, colour, iconography, spacing, and layout principles to support scalable product experiences.</li><li>Optimised screen layouts and interaction patterns to improve usability, accessibility, navigation clarity, and user engagement.</li><li>Collaborated on user flows and interface structures to create intuitive and consistent mobile experiences across key product journeys.</li></ul></div></div>
+<div class="row"><time>2023</time><div><h3>UX/UI Designer</h3><div class="org">Website Design</div><ul><li>Led the redesign of responsive web interfaces using a scalable, component-based design approach to support future product and feature expansion.</li><li>Simplified information architecture, page layouts, and navigation flows to create clearer and more intuitive user journeys.</li><li>Established consistent typography, colour, spacing, and visual patterns across web pages to strengthen overall brand consistency.</li><li>Designed responsive interfaces with a focus on usability, accessibility, visual hierarchy, and cross-device consistency.</li></ul></div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<div class="about">
+<div>
+<h2>Designer with a developer's mindset</h2>
+<p class="lead">I studied computer applications (BCA and MCA) before moving into design. That background helps me design things that can actually be built, and I enjoy working closely with developers.</p>
+<div class="stats"><b>MCA<span style="display:block;font:400 15px var(--b)">technical foundation</span></b><b>30%<span style="display:block;font:400 15px var(--b)">conversion lift</span></b><b>40%<span style="display:block;font:400 15px var(--b)">faster load</span></b></div>
+<div class="edu">
+<p><strong>MCA</strong>, Sambalpur University, 2021–2023</p>
+<p><strong>BCA</strong>, Sambalpur University, 2018–2021</p>
+<p><strong>UX/UI Design Bootcamp</strong>, DesignBoat UI/UX School, 2025</p>
+</div>
+</div>
+<div class="skills">
+<div><h3>UX research</h3><p>User research, journey mapping, user flows, information architecture, usability testing.</p></div>
+<div><h3>UI design</h3><p>Wireframes, prototypes, interaction design, accessibility, mobile-first responsive layouts.</p></div>
+<div><h3>Design systems</h3><p>Typography, colour systems, iconography, components and design tokens.</p></div>
+<div><h3>Graphic &amp; brand</h3><p>Brand identity, visual storytelling, social media graphics, reels and carousels.</p></div>
+<div><h3>Tools</h3><p>Figma, FigJam, ProtoPie, Jitter, Adobe XD, Photoshop, Illustrator, Canva, Affinity Designer.</p></div>
+<div><h3>Code basics</h3><p>React, Tailwind CSS and responsive HTML/CSS for smooth handoff.</p></div>
+</div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let's work together</h2>
+<a class="mail" href="mailto:ankitapattajoshi3@gmail.com">ankitapattajoshi3@gmail.com</a>
+<p style="margin-top:20px;font-size:19px">+91 79910 32148 · Bengaluru, India · Open to UI/UX, product and graphic design roles</p>
+<div class="links">
+<a class="btn" href="https://www.linkedin.com/in/ankita-pattajoshi/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener">Behance</a>
+<a class="btn ghost" href="mailto:ankitapattajoshi3@gmail.com">Send an email</a>
+</div>
+</div></section>
+</main>
+
+<main id="toy">
+<header class="case-hero"><div class="wrap">
+<a class="back" href="#/">← Back to all work</a>
+<h1>Rental Toy House</h1>
+<p class="lead" style="color:#D3CADD">Clearer flows, a faster app and a design system the team could build on.</p>
+<div class="meta">
+<div><small>Role</small>Product designer (UX/UI)</div>
+<div><small>Team</small>Cross-functional, 3 people</div>
+<div><small>Timeline</small>2024 – 2025</div>
+<div><small>Stack</small>Figma, React, Tailwind CSS</div>
+</div></div></header>
+
+<div class="cs" style="padding-bottom:0"><div class="wrap" style="display:block"><img class="banner" src="images/toy-house-mockup-laptop.png" alt="Toy House website shown on a laptop"></div></div>
+
+<div class="cs"><div class="wrap"><h2>The problem</h2><div>
+<p>Parents often struggle with buying new toys for their children, as kids can quickly lose interest in toys they already have. This can lead to unnecessary spending, unused toys, and clutter at home.</p>
+<!-- Add 1–2 sentences on who the users were and how you found the problems -->
+</div></div></div>
+
+<div class="cs" style="background:var(--paper)"><div class="wrap"><h2>What I did</h2><div>
+<p>I developed the Toy Share concept and visual identity around the idea of fun, sharing, and discovery without the clutter. The design focuses on creating a playful yet clean experience that communicates the rental model clearly while making the brand appealing to both parents and children.</p>
+<!-- Add: research methods, wireframes, user flows, usability test findings -->
+</div></div></div>
+
+<div class="cs"><div class="wrap"><h2>From wireframe to final design</h2>
+<div class="gal">
+<figure class="tall"><img src="images/toy-house-wireframe.png" alt="Toy House wireframe" loading="lazy"><figcaption>Wireframe</figcaption></figure>
+<figure class="tall"><img src="images/toy-house-website.png" alt="Toy House website design" loading="lazy"><figcaption>Website design</figcaption></figure>
+<figure class="tall"><img src="images/toy-house-mockup-mobile.png" alt="Toy House mobile view" loading="lazy"><figcaption>Mobile view</figcaption></figure>
+<figure><img src="images/toy-house-poster.png" alt="Toy House promotional poster" loading="lazy"><figcaption>Promotional poster</figcaption></figure>
+</div></div></div>
+
+<div class="cs dark"><div class="wrap"><h2>Results</h2>
+<div class="big"><div><b>30%</b>conversion increase</div><div><b>40%</b>faster page load</div></div>
+</div></div>
+
+<div class="cs"><div class="wrap"><h2>More on Behance</h2><div>
+<p>See the full screens and process for this project and others.</p>
+<a class="btn" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener" style="background:var(--ink);color:var(--cream)">Open my Behance</a>
+</div></div></div>
+</main>
+
+<main id="pitch">
+<header class="case-hero"><div class="wrap">
+<a class="back" href="#/">← Back to all work</a>
+<h1>Pitch deck design</h1>
+<p class="lead" style="color:#D3CADD">Slides that make a complex idea easy to follow.</p>
+<div class="meta" style="grid-template-columns:repeat(3,1fr)">
+<div><small>Role</small>Visual and graphic design</div>
+<div><small>Deliverable</small>Pitch deck</div>
+<div><small>Focus</small>Layout, diagrams, hierarchy</div>
+</div></div></header>
+<div class="cs"><div class="wrap"><h2>The slides</h2>
+<!-- Add 2–3 sentences: what the deck was for, who it was for, and what you designed -->
+<div class="gal">
+<figure><img src="images/pitch-deck-slide1.png" alt="Pitch deck slide 1" loading="lazy"></figure>
+<figure><img src="images/pitch-deck-slide3.png" alt="Pitch deck slide 3, problem and market size" loading="lazy"></figure>
+<figure><img src="images/pitch-deck-slide4.png" alt="Pitch deck slide 4, layered diagram" loading="lazy"></figure>
+<figure><img src="images/pitch-deck-slide6.png" alt="Pitch deck slide 6" loading="lazy"></figure>
+</div></div></div>
+<div class="cs dark"><div class="wrap"><h2>More work</h2><div>
+<p>See more projects and process on Behance.</p>
+<a class="btn" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener">Open my Behance</a>
+</div></div></div>
+</main>
+
+<!-- ============ MOODSYNC CASE STUDY ============ -->
+<main id="moodsync">
+<header class="case-hero"><div class="wrap">
+<a class="back" href="#/">← Back to all work</a>
+<h1>MoodSync: an AI-powered, emotion-based music experience</h1>
+<p class="lead" style="color:#D3CADD">Feel first, play next.</p>
+<a class="btn" href="https://www.behance.net/gallery/247219679/MoodSync-Designing-Emotion-Aware-Music-Experiences" target="_blank" rel="noopener" style="margin-top:24px">View on Behance</a>
+<div class="meta">
+<div><small>Role</small>UX/UI designer</div>
+<div><small>Type</small>Concept case study</div>
+<div><small>Platform</small>Mobile app</div>
+<div><small>Focus</small>AI, biometrics, music</div>
+</div></div></header>
+<div class="cs dark" style="padding-top:0"><div class="wrap" style="display:block"><img class="banner" src="images/moodsync-hero.png" alt="MoodSync app scanning a face to detect mood" loading="lazy"></div></div>
+
+<div class="cs"><div class="wrap"><h2>The problem</h2><div>
+<p>Streaming platforms have created a new kind of digital exhaustion. Users spend an average of <strong>12.4 minutes a day</strong> just deciding what to listen to. This "search fatigue" breaks up the listening experience and turns a moment of emotional connection into a menu-scrolling task.</p>
+<div class="quote">“I don’t just want songs that match my mood. I want music that helps me move through it.”<small>User interview</small></div>
+<img class="banner mini" src="images/moodsync-problem.png" alt="Tangled search results illustrating search fatigue" loading="lazy">
+</div></div></div>
+
+<div class="cs" style="background:var(--paper)"><div class="wrap"><h2>The solution: harmony of tech and emotion</h2><div>
+<p>MoodSync removes the friction of choice. It reads your facial cues and turns them into the right soundscape, so discovery is instant and no search is needed. Every session is unique, reacting to your pulse, your environment and your immediate sentiment.</p>
+<div class="cards">
+<div class="card"><h3>Detect emotion</h3><p>Real-time scanning of micro-expressions.</p></div>
+<div class="card"><h3>AI analysis</h3><p>Neural mapping of emotional data to harmonic signatures.</p></div>
+<div class="card"><h3>Personalised playlist</h3><p>A playlist of tracks tailored to your state of mind.</p></div>
+</div>
+<div class="st"><div><b>0.8s</b><span>sync time</span></div><div><b>99%</b><span>detection accuracy</span></div></div>
+<img class="banner" src="images/moodsync-solution.png" alt="MoodSync app showing Calm Detected and a matched playlist" loading="lazy">
+</div></div></div>
+
+<div class="cs dark"><div class="wrap"><h2>How it works</h2><div>
+<p>A proprietary emotional mapping engine turns biometric facial markers into a fluid listening environment in real time.</p>
+<div class="cards c4">
+<div class="card"><h3>1. Capture face</h3><p>High-frequency sampling of 128 key facial muscle points.</p></div>
+<div class="card"><h3>2. Detect emotion</h3><p>Neural analysis maps micro-expressions to the VAD emotional scale.</p></div>
+<div class="card"><h3>3. AI processing</h3><p>Algorithms match mood with spectral audio signatures.</p></div>
+<div class="card"><h3>4. Playlist generation</h3><p>A living playlist adapts tempo and key to your state.</p></div>
+</div>
+<img class="banner" src="images/moodsync-how.png" alt="Four visuals for face capture, emotion detection, AI processing and playlist generation" loading="lazy">
+</div></div></div>
+
+<div class="cs"><div class="wrap"><h2>The emotive transition</h2><div>
+<p>MoodSync doesn't only match your mood. It guides you toward a better state through curated auditory bridges, moving from a sad track, through a neutral middle, to a happier one.</p>
+<div class="st"><div><b>94.2%</b><span>growth in emotional velocity</span></div><div><b>42 min</b><span>per session</span></div></div>
+<img class="banner mini" src="images/moodsync-transition.png" alt="Three tracks moving from sad to neutral to happy" loading="lazy">
+</div></div></div>
+
+<div class="cs" style="background:var(--paper)"><div class="wrap"><h2>Understanding the audience</h2><div>
+<p>Research pointed to three user profiles. Mapping their emotional journeys shaped an interface built for deep work, daily utility and musical exploration.</p>
+<div class="cards">
+<div class="card"><h3>The Academic</h3><small>Graduate student</small><q>“I need an environment where silence isn’t empty, but filled with a texture that helps me focus.”</q><p><strong>Needs:</strong></p><ul><li>Deep focus</li><li>Lo-fi textures</li></ul><p><strong>Behaviours:</strong></p><ul><li>4+ hour study sessions</li><li>Uses generative noise to block distractions</li><li>Prefers a dark UI to reduce eye strain</li></ul></div>
+<div class="card"><h3>The High-Achiever</h3><small>Product lead</small><q>“Music is my only transition between ‘Work Mode’ and ‘Home Mode’.”</q><p><strong>Needs:</strong></p><ul><li>Efficiency</li><li>Stress decompression</li><li>Quick discovery</li></ul><p><strong>Behaviours:</strong></p><ul><li>Listens on high-speed commutes</li><li>Curates “Power Playlists” for workouts</li><li>Demands seamless cross-device syncing</li></ul></div>
+<div class="card"><h3>The Audiophile</h3><small>Sound designer</small><q>“I listen to the space between notes. The UI should be as elegant as the soundscape.”</q><p><strong>Needs:</strong></p><ul><li>High fidelity</li><li>Deep exploration</li><li>Spatial audio</li></ul><p><strong>Behaviours:</strong></p><ul><li>Active listening, no multitasking</li><li>Digs for rare independent recordings</li><li>Values visual aesthetics as much as audio</li></ul></div>
+</div></div></div></div>
+
+<div class="cs dark"><div class="wrap"><h2>User journey flow</h2><div>
+<p>Five steps from opening the app to a playlist that keeps adapting: <strong>open app</strong> with biometric sign-in, <strong>scan face</strong> to read emotional state, <strong>detect mood</strong> from the core frequency, <strong>generate playlist</strong> from mood and taste, then <strong>listen and adapt</strong> as feedback adjusts the audio.</p>
+<img class="banner" src="images/moodsync-journey.png" alt="Five screens showing the MoodSync user journey" loading="lazy">
+</div></div></div>
+
+<div class="cs"><div class="wrap"><h2>Precision AI scanning</h2><div>
+<p>Real-time facial topography mapping analyses emotional markers on the device screen, with clear status, data acquisition progress and an option to recalibrate.</p>
+<div class="st"><div><b>12ms</b><span>latency</span></div><div><b>3,402</b><span>data points</span></div></div>
+<p>Because the scan is sensitive, the screen states that it is <strong>end-to-end encrypted</strong>, and a neural config panel lets users tune sensitivity and fidelity.</p>
+<img class="banner mini" src="images/moodsync-scan.png" alt="Face scan screen with a neural config panel" loading="lazy">
+</div></div></div>
+
+<div class="cs" style="background:var(--paper)"><div class="wrap"><h2>Generated playlists</h2><div>
+<p>Playlists are built for your emotional state and use real-time biometric feedback to move your listening from stress toward serenity.</p>
+<div class="st"><div><b>-24%</b><span>average cognitive load</span></div><div><b>98%</b><span>match rate</span></div></div>
+<img class="banner mini" src="images/moodsync-playlist.png" alt="Pulse Mix playlist and now-playing screen" loading="lazy">
+</div></div></div>
+
+<div class="cs"><div class="wrap"><h2>Adaptive learning loops</h2><div>
+<p>MoodSync doesn't just play tracks. It learns your intent, and every interaction refines the soundscape in real time.</p>
+<div class="cards">
+<div class="card"><h3>The feedback loop</h3><p>Continuous signal processing through user sentiment markers.</p></div>
+<div class="card"><h3>Transition mismatch</h3><p>A skip is read as friction and triggers an immediate shift in the melodic structure.</p></div>
+<div class="card"><h3>Mood reinforcement</h3><p>Likes act as anchors, stabilising the generative parameters and deepening the current mood.</p></div>
+</div></div></div></div>
+
+<div class="cs dark"><div class="wrap"><h2>Design foundations</h2><div>
+<p>The visual language of emotional intelligence: each colour stands for an emotional state.</p>
+<div class="sw">
+<div style="background:#85b9ff">Blue #85b9ff<small>Calm &amp; serenity</small></div>
+<div style="background:#e9c400">Yellow #e9c400<small>Optimism &amp; joy</small></div>
+<div style="background:#ffb4a5">Red #ffb4a5<small>Intensity &amp; energy</small></div>
+<div style="background:#6c63ff;color:#fff">Purple #6C63FF<small>The neutral bridge</small></div>
+</div>
+<div class="cards c2">
+<div class="card"><h3>Typography</h3><p><strong>Manrope Bold</strong> for headlines, <strong>Inter Regular</strong> for body text, chosen for legibility and clarity across every screen.</p></div>
+<div class="card"><h3>UI modules and atoms</h3><p>Primary glow and glass-morph buttons, icon controls, progress bars and track cards that share one system.</p></div>
+</div></div></div></div>
+
+<div class="cs"><div class="wrap"><h2>Dynamic emotional UI</h2><div>
+<p>An adaptive colour engine analyses the tone of the music in real time and shifts the interface's colour temperature to reflect the user's emotional state and the playback environment.</p>
+<div class="cards c4">
+<div class="card"><small>Sad</small><p>Calm and reflective</p></div>
+<div class="card"><small>Happy</small><p>Energetic and bright</p></div>
+<div class="card"><small>Angry</small><p>Intense and bold</p></div>
+<div class="card"><small>Neutral</small><p>Balanced and stable</p></div>
+</div>
+<div class="st"><div><b>94%</b><span>emotional resonance</span></div></div>
+<img class="banner" src="images/moodsync-ui.png" alt="Four player screens in blue, yellow, red and neutral mood themes" loading="lazy">
+</div></div></div>
+
+<div class="cs" style="background:var(--paper)"><div class="wrap"><h2>Challenges and considerations</h2><div>
+<p>Working where machine intelligence meets human emotion meant designing with care.</p>
+<div class="cards">
+<div class="card"><h3>Emotion accuracy</h3><p>Interpreting emotions is complex, so the product has to stay humble about what it detects.</p></div>
+<div class="card"><h3>Privacy concerns</h3><p>Biometric data is sensitive, which is why scanning states and encryption are shown clearly.</p></div>
+<div class="card"><h3>User trust</h3><p>People need confidence in AI decisions, so users can recalibrate and give feedback.</p></div>
+</div></div></div></div>
+
+<div class="cs dark"><div class="wrap"><h2>Future vision</h2><div>
+<p>The next frontiers for MoodSync are emotional intelligence and biometric harmony.</p>
+<div class="cards">
+<div class="card"><h3>Voice emotion detection</h3><p>Understanding emotion from tone and speech patterns.</p></div>
+<div class="card"><h3>Smartwatch integration</h3><p>Syncing your heart rate with the rhythm of the soundscape.</p></div>
+<div class="card"><h3>AI learning</h3><p>Building a unique profile that evolves with your listening habits.</p></div>
+</div>
+<img class="banner" src="images/moodsync-future.png" alt="Voice detection, smartwatch and AI learning concepts" loading="lazy">
+</div></div></div>
+
+<div class="cs"><div class="wrap"><h2>Takeaway</h2><div>
+<p>MoodSync is an experience that listens to you. The aim was to cut the effort of choosing, and to make a music app feel closer to a companion that understands how you feel.</p>
+<a class="btn dk" href="https://www.behance.net/gallery/247219679/MoodSync-Designing-Emotion-Aware-Music-Experiences" target="_blank" rel="noopener">View the full case study on Behance</a>
+<a class="btn ghost" href="https://www.behance.net/ankitapattajoshi" target="_blank" rel="noopener" style="margin-left:8px">More projects</a>
+</div></div></div>
+</main>
+
+<footer><div class="wrap"><img class="flogo" src="logo-full.png" alt="Ankita Pattajoshi, UI UX Designer"><span>© 2026 Ankita Pattajoshi</span></div></footer>
+
+<script>
+(function(){
+var home=document.getElementById('home'),views={'#/toy-house':document.getElementById('toy'),'#/pitch-deck':document.getElementById('pitch'),'#/moodsync':document.getElementById('moodsync')};
+function route(){
+var h=location.hash,v=views[h];
+for(var k in views)views[k].style.display=views[k]===v?'block':'none';
+home.style.display=v?'none':'block';
+if(v){window.scrollTo(0,0);return}
+var id=h.slice(1),el=id&&id.charAt(0)!=='/'&&document.getElementById(id);
+if(el)el.scrollIntoView();else window.scrollTo(0,0);
+}
+addEventListener('hashchange',route);route();
+})();
+</script>
+</body>
+</html>
